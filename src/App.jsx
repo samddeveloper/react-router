@@ -13,7 +13,8 @@ import Faq from './pages/help/Faq'
 import Contact from './pages/help/Contact'
 import NotFound from './pages/NotFound'
 import Profiles, { profilesLoader } from './pages/profiles/Profiles'
-import ProfileDetails from './pages/profiles/ProfileDetails'
+import ProfileDetails, { profileDetailsLoader }from './pages/profiles/ProfileDetails'
+import ProfilesError from './pages/profiles/ProfilesError'
 
 //Layouts
 import RootLayout from './layouts/RootLayout'
@@ -28,12 +29,12 @@ const routesFromElements = createRoutesFromElements(
             <Route path="faq" element={<Faq />} />
             <Route path="contact" element={<Contact />} />
         </Route>
-        <Route path="profiles" element={<ProfilesLayout />}>
+        <Route path="profiles" element={<ProfilesLayout />} errorElement={<ProfilesError />}>
             <Route index element={<Profiles />} loader={profilesLoader} />
             <Route
                 path=":id"
                 element={<ProfileDetails />}
-                // loader={profileDetailsLoader}
+                loader={profileDetailsLoader}
             />
         </Route>
         <Route path="*" element={<NotFound />} />
