@@ -1,16 +1,20 @@
 import { Outlet, NavLink, Link } from 'react-router-dom'
-import logo from '../Assets/logo.png'
+import navLogo from '../Assets/reikimaster.png'
+
 
 const RootLayout = () => {
     return (
         <div className="root-layout">
             <header>
                 <nav className="navbar">
-                    <img
-                        src={logo}
-                        alt="Synergy Development"
-                        className="logo"
+                    
+                    <img 
+                        src={navLogo}
+                        alt="Cesar Lopez"
+                        className="nav-logo"
                     />
+                    
+                   
                     <div className="nav-links">
                         <NavLink className="nav-link" to="/">
                             Hem

@@ -1,7 +1,7 @@
 export default function About() {
     return (
         <div className="about">
-            <h2>Om oss</h2>
+            <h2>Om mig</h2>
             <p>
                 Vi värnar om integriteten och säkerheten för både företag och
                 kandidater på vår plattform. Vi använder avancerad teknik för

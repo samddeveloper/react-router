@@ -1,22 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --primary: #EEA47FFF ;
+  --background: #FEF6EB;
+  --lightgreen: #ced6ce ;
   --secondary: rgb(78, 78, 78);
   --dark: #1d1d1d;
+  --text-color: #415941;
 }
 
 body {
   margin: 0;
-  padding: 20px;
   font-family: "Poppins";
-  background: var(--secondary);
+  background: var(--background);
+
+}
+
+main {
+  max-width: 1629px; /* Uppdaterad rad */
+  margin: 40px auto;
 }
 
 * {
   color: #fff;
   margin: 0;
+ 
 }
+
+
 
 p {
   margin: 20px 0;
@@ -31,10 +41,62 @@ button {
   cursor: pointer;
 }
 
+/*Home*/
+
+
+
+
+ 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 1629px; /* Uppdaterad rad */
+  margin: 0 auto;
+}
+
+.home-title, .home-text {
+  color: var(--text-color);
+}
+
+
+
+
+
+.title-container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.nature {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:flex-start;
+  border-radius: 7px;
+  min-height: 70vh; /* Uppdaterad rad */
+  background-image: url('./Assets/nature.jpg');
+  background-size: cover; /* Uppdaterad rad */
+  background-position: center center; /* Uppdaterad rad */
+  background-repeat: no-repeat; /* Lägg till denna rad */
+  width: 100%; /* Uppdaterad rad */
+  max-width: 1629px; /* Uppdaterad rad */
+  margin: auto; /* Lägg till denna rad för att skapa utrymme runt elementet */
+  
+}
+
+.title-container {
+  margin-left: 70px;
+}
+
+
 /* Navbar */
 header {
-  max-width:1200px;
-  margin: 40px auto;
+  background-color: #CED6CE;
 }
 .navbar {
   display: flex;
@@ -43,10 +105,14 @@ header {
   margin: 0px auto;
 }
 
+.nav-logo {
+  width: 150px;
+}
 .nav-links {
   display: flex;
   gap: 16px;
-  justify-content: end;
+  justify-content:center;
+  align-items: center;
 }
 
 .nav-link {
@@ -61,12 +127,15 @@ header {
 }
 
 .logo {
-width: 100px;
-object-fit: contain;
+width: 150px;
+border-radius: 50%;
+height: 150px;
+object-fit:contain;
+
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1629px; /* Uppdaterad rad */
   margin: 40px auto;
 }
 
@@ -155,4 +224,62 @@ form label span {
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0px ;
+}
+
+.services-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.services-button:hover {
+  background-color: #738673;
+}
+
+/* Om sektion */
+.about-section {
+    display: flex;
+    align-items: center;
+    height: 500px; /* Matcha höjden med .nature */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    background-color: var(--lightgreen);
+    
+}
+
+.hero-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+    flex: 2;
+    color: var(--text-color); /* Lägg till denna rad för att sätta textfärgen */
+}
+
+.about-text h2,
+.about-text h3,
+.about-text h4,
+.about-text p {
+    color: var(--text-color); /* Se till att alla textkomponenter använder rätt färg */
 }
