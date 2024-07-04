@@ -12,21 +12,17 @@ body {
   margin: 0;
   font-family: "Poppins";
   background: var(--background);
-
 }
 
 main {
-  max-width: 1629px; /* Uppdaterad rad */
+  max-width: 1629px;
   margin: 40px auto;
 }
 
 * {
   color: #fff;
   margin: 0;
- 
 }
-
-
 
 p {
   margin: 20px 0;
@@ -41,28 +37,19 @@ button {
   cursor: pointer;
 }
 
-/*Home*/
-
-
-
-
- 
+/* Home */
 .page-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  max-width: 1629px; /* Uppdaterad rad */
+  max-width: 1629px;
   margin: 0 auto;
 }
 
 .home-title, .home-text {
   color: var(--text-color);
 }
-
-
-
-
 
 .title-container {
   position: relative;
@@ -75,43 +62,43 @@ button {
 .nature {
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:flex-start;
+  justify-content: center;
+  align-items: flex-start;
   border-radius: 7px;
-  min-height: 70vh; /* Uppdaterad rad */
+  min-height: 70vh;
   background-image: url('./Assets/nature.jpg');
-  background-size: cover; /* Uppdaterad rad */
-  background-position: center center; /* Uppdaterad rad */
-  background-repeat: no-repeat; /* Lägg till denna rad */
-  width: 100%; /* Uppdaterad rad */
-  max-width: 1629px; /* Uppdaterad rad */
-  margin: auto; /* Lägg till denna rad för att skapa utrymme runt elementet */
-  
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1629px;
+  margin: auto;
 }
 
 .title-container {
   margin-left: 70px;
 }
 
-
 /* Navbar */
 header {
   background-color: #CED6CE;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .nav-logo {
   width: 150px;
 }
+
 .nav-links {
   display: flex;
   gap: 16px;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -127,54 +114,53 @@ header {
 }
 
 .logo {
-width: 150px;
-border-radius: 50%;
-height: 150px;
-object-fit:contain;
-
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  object-fit: contain;
 }
 
 main {
-  max-width: 1629px; /* Uppdaterad rad */
+  max-width: 1629px;
   margin: 40px auto;
 }
 
-/* help layout */
-.help-layout__nav{
+/* Help layout */
+.help-layout__nav {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 30px auto;
 }
 
-.help-layout__nav__link{
+.help-layout__nav__link {
   padding: 10px;
   border: 2px solid white;
   border-radius: 4px;
   text-decoration: none;
 }
 
-.help-layout__nav__link:hover{
-background-color: var(--primary);
+.help-layout__nav__link:hover {
+  background-color: var(--primary);
 }
 
 .help-layout__nav__link.active {
   background-color: var(--primary);
 }
 
-/*FAQ*/
-
+/* FAQ */
 .faq__question {
-  background-color: rgba(0,0,0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 5px 20px;
   border-radius: 4px;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
-/*contact form*/
+/* Contact form */
 form {
   margin-top: 30px;
 }
+
 form input,
 form label span,
 form textarea {
@@ -182,7 +168,7 @@ form textarea {
 }
 
 form input,
-form textarea{
+form textarea {
   margin-bottom: 30px;
   padding: 8px;
   border-radius: 4px;
@@ -195,23 +181,22 @@ form label span {
   margin-bottom: 10px;
 }
 
-/* profiles list */
-
+/* Profiles list */
 .profiles__links {
   display: block;
-  background-color: rgba(0,0,0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 4px;
-  margin: 20px 0px;
+  margin: 20px 0;
   text-decoration: none;
 }
 
-.profiles__links:hover p  {
+.profiles__links:hover p {
   color: var(--primary);
 }
 
 .profiles p {
-  margin: 0px;
+  margin: 0;
 }
 
 .profiles__station {
@@ -220,12 +205,165 @@ form label span {
 }
 
 .profile-details {
-  background-color: rgba(0,0,0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 4px;
-  margin: 20px 0px ;
+  margin: 20px 0;
 }
 
+/* Services section */
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightgreen);
+  padding: 40px 20px;
+  border-radius: 8px;
+  max-width: 1629px;
+  margin: 40px auto;
+}
+
+.services-title {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.services-description {
+  color: var(--dark);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.service {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.service h3 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: var(--dark);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.service-price {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.service-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #738673;
+}
+
+/* About section */
+.about-section {
+  display: flex;
+  align-items: center;
+  height: 500px; /* Matcha höjden med .nature */
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  background-color: var(--lightgreen);
+}
+
+.hero-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  flex: 2;
+  color: var(--text-color);
+}
+
+.about-text h2,
+.about-text h3,
+.about-text h4,
+.about-text p {
+  color: var(--text-color);
+}
+
+/* CSS för knappcontainer i home sektionen */
+.button-container {
+  display: flex;
+  gap: 10px; /* Avstånd mellan knapparna */
+  margin-top: 20px; /* Lägg till lite utrymme ovanför knapparna */
+}
+
+/* Om mig sektion */
+.about-me-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--lightgreen);
+  border-radius: 7px;
+}
+
+.about-me-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-me-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.about-me-text {
+  flex: 2;
+  color: var(--text-color);
+}
+
+.about-me-text h1 {
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.about-me-text p {
+  line-height: 1.6;
+}
+
+/* Gemensam knappstil */
 .services-button {
   display: inline-block;
   padding: 10px 20px;
@@ -238,48 +376,78 @@ form label span {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 120px;
 }
 
 .services-button:hover {
   background-color: #738673;
 }
 
-/* Om sektion */
-.about-section {
-    display: flex;
-    align-items: center;
-    height: 500px; /* Matcha höjden med .nature */
+/* Styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-.about-content {
-    display: flex;
-    align-items: center;
-    background-color: var(--lightgreen);
-    
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.hero-image {
-    flex: 1;
-    margin-right: 20px;
+h1 {
+  color: #333;
+  text-align: center;
 }
 
-.profile-image {
-    width: 100%;
-    height: auto;
-    
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.about-text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-    flex: 2;
-    color: var(--text-color); /* Lägg till denna rad för att sätta textfärgen */
+label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-.about-text h2,
-.about-text h3,
-.about-text h4,
-.about-text p {
-    color: var(--text-color); /* Se till att alla textkomponenter använder rätt färg */
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+.success {
+  color: green;
+  font-size: 0.8em;
+}
+
+/* Notfound */
+
+.not-found {
+  color: var(--text-color);
 }
