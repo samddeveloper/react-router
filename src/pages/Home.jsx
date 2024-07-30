@@ -2,6 +2,7 @@ import '../index.css';
 import { Link } from 'react-router-dom';
 import heroImage from '../Assets/hero.jpg';
 
+
 export default function Home() {
     return (
         <div className="page-container">
